@@ -23,7 +23,7 @@ document.body.querySelector(".navbar").innerHTML +=`
             <a class="navbar-item" href="../account"><i class="fas fa-user-circle"></i> حسابي</a>
             <div class="buttons">
                 <a class="button is-red is-outlined" href="../login">تسجيل دخول</a>
-                <a class="button is-primary is-outlined" href="../login/#reg">حساب جديد</a>
+                <a class="button is-primary is-outlined" href="../login/#reg" onclick="formShow()">حساب جديد</a>
             </div>
         </div>
     </div>
