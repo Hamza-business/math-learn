@@ -1,0 +1,309 @@
+/* Main Settings */
+body{
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+*, body, button, input, textarea{
+    font-family: 'Cairo', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+ul,li{
+    list-style: none;
+}
+i{
+    padding-left: 6px;
+}
+
+.fas.fa-angle-right{
+    padding: 0;
+}
+
+:root{
+    --nav-color: rgb(229, 245, 247 , 0.3 );
+    --main-color: #ff3333;
+    --second-color: #f5f6fa;
+    --blue-color: #3298dc;
+    --green-color: #00d1b2;
+    --red-color:#f14668;
+    --borderB: 2px solid #eee;
+    --main-grid: repeat(auto-fill, minmax(200px, 1fr));
+    --second-grid: repeat(auto-fill, minmax(280px, 1fr));
+    --main-padding: 100px;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--second-color);
+    box-shadow: inset 0 0 6px var(--second-color);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #ff3333;
+    border-radius: 5px;
+}
+:root {
+    scrollbar-color: #ff3333 var(--second-color) !important;
+    scrollbar-width: thin !important;
+}
+
+
+
+/* Start Styling Project */
+/*=================================== Nav Bar Style Start ===================================*/
+nav{
+    background-color: var(--nav-color) !important;
+}
+.navbar-link.is-arrowless {
+    font-size: 36px;
+}
+.navbar-menu.is-active {
+    position: absolute;
+    width: 100%;
+    background-color: var(--second-color);
+}
+.navbar-menu .is-bell{
+    font-size: 20px;
+    margin-left: 10px;
+    padding-right: 21px;
+}
+.navbar-brand .navbar-item.logo {
+    padding: 0 !important;
+    padding-right: 15px !important;
+}
+.navbar-brand .navbar-item.logo img {
+    height: 70px;
+}
+.navbar-burger {
+  height: 70px;
+}
+/*=================================== Nav Bar Style End ===================================*/
+
+
+/*=================================== footer Style Start ===================================*/
+.footer {
+    background-color: var(--second-color);
+    padding: 40px 24px 40px !important;
+}
+footer img {
+    width: 140px;
+}
+.location {
+    margin-top: 10px;
+}
+.locationLink {
+    color: #535d75;
+}
+.locationLink label{
+    cursor: pointer;
+}
+.locationLink i {
+    font-size: 22px;
+}
+.locationLink:hover {
+    color: var(--main-color);
+}
+.footer .social1{
+    width: 42px;
+    height: 42px;
+    background-color: #e9eff5;
+    text-align: center;
+    margin: 15px 0 0 20px;
+    line-height: 42px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.footer .social1 i{
+    padding: 0;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+.footer .social1:hover{
+    background-color: var(--main-color);
+}
+.footer .social1:hover i{
+    color: #e9eff5;
+}
+.footer .subtitle.is-5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer .column li {
+    margin-bottom: 0.8rem;
+}
+.footer .column li a {
+    color: #535d75;
+}
+.footer .column li:hover a {
+    color: var(--main-color);
+}
+/*=================================== footer Style End ===================================*/
+
+
+/*=================================== licens Style Start ===================================*/
+.licens {
+    background-color: #f0f2fb;
+    padding: 25px 0;
+}
+/*=================================== licens Style End ===================================*/
+
+
+/*####################################### home page styling #######################################*/
+.Home_hero{
+    background-image: url("../images/bg3j.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem 0px 8rem;
+    box-shadow: rgba(255, 0, 0, 0.027) 0px 0px 0px 1000px inset;
+}
+.Home_hero video{
+    border-radius: 20px;
+    box-shadow: rgba( 255, 51, 51, 0.2) 0px 8px 50px;
+}
+.Home_hero .hero-sub{
+    margin-top: 3rem !important;
+    margin-bottom: 2rem ;
+    line-height: 30px;
+}
+.Home_hero.buttons-cont{
+    margin-top: -30px;
+}
+.Home_hero .buttons-cont .button{
+    margin-left: 10px;
+}
+
+
+.bynumbers{
+    padding-bottom: 30px !important;
+}
+.features .gridSys.c2 {
+    display: grid;
+    grid-template-columns: var(--main-grid);
+    grid-gap: 40px;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 15%;
+    border-radius: 30px;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 44px 74px;
+}
+.container.block.c2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: -190px;
+}
+
+
+.features{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.features .gridSys{
+    display: grid;
+    grid-template-columns: var(--main-grid);
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.features .gridSys i {
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+.features .tree {
+    transition: 0.4s;
+}
+.features .tree:hover {
+    box-shadow: 0px 2px 12px #ddd;
+}
+.features .gridSys h3 {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.tree.has-text-centered {
+    border-radius: 10px;
+}
+
+
+.LastLec{
+    padding-top: 0 !important;
+}
+
+
+.about{
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: var(--main-padding);
+}
+
+.about .content1 {
+    padding: 0 120px;
+}
+
+.about .content1 .image{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.about .content1 p{
+    margin-top: -5px !important;
+    line-height: 30px;
+}
+
+.about .content1 a{
+    min-width: 300px;
+}
+
+
+@media (max-width: 1023px){
+    .buttons:last-child {
+        margin-bottom: -.5rem;
+        margin-top: 10px;
+    }
+
+    .hero .title{
+        font-size: 30px !important;
+    }
+
+    .button.is-bg-red{
+        padding: 20px 25px;
+    }
+
+    .navbar-menu {
+        animation: navMenu 0.5s ease-in-out;
+        animation-fill-mode: both;
+    }
+}
+
+@media (max-width: 680px){
+    .card{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
+}
+
+@media (max-width: 440px){
+    .Home_hero .buttons-cont {
+        margin-right: -20px;
+    }
+
+    .Home_hero .is-bg-red.is-rounded {
+        padding: 20px 27px !important;
+    }
+    
+}
+
+/* @media (max-width:400px){
+    .befored::after, .befored::before{
+        display: none;
+    } 
+} */
