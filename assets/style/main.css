@@ -263,6 +263,16 @@ footer img {
 }
 
 
+.linkcentered{
+    display: block;
+    margin: 10px auto auto auto;
+    font-size: 17px !important;
+    text-align: center;
+}
+.reg{
+    display: none;
+}
+
 @media (max-width: 1023px){
     .buttons:last-child {
         margin-bottom: -.5rem;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="HTML">
+<head>
+    <title>ذاكرلي رياضيات</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png"/>
+
+    <!-- assets -->
+    <link rel='stylesheet' href='../assets/style/bulma-rtl.min.css'>
+    <link rel='stylesheet' href='../assets/style/main.css'>
+    <link rel="stylesheet" href="../assets/style/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+
+</head>
+<body onload="formShow()">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    </nav>
+
+    
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-5">
+                <form action="" class="box" id="login">
+                  <div class="field">
+                    <label for="" class="label">البريد الالكتروني</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. Ahmed@gmail.com" class="input" required>
+                      <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="label">كلمة المرور</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" required>
+                      <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="checkbox"></label><input type="checkbox">تذكرني</label>
+                  </div>
+                  <div class="field">
+                    <button class="button is-bg-red is-fullwidth">تسجيل الدخول</button>
+                    <a href="#reg" class="linkcentered" onclick="formShow()">انشاء حساب</a>
+                  </div>
+                </form>
+                <!--#########################Regester form#########################-->
+                <form action="" class="box reg" id="register">
+                    <div class="field">
+                        <label for="name" class="label">الاسم</label>
+                        <div class="control has-icons-left">
+                          <input type="name" placeholder="e.g. Ahmed" class="input" name="name" required>
+                          <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+                        </div>
+                    </div>
+                  <div class="field">
+                    <label for="email" class="label">البريد الالكتروني</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. Ahmed@gmail.com" class="input" required name="email">
+                      <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="password" class="label">كلمة المرور</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" name="password" required>
+                      <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <button class="button is-bg-red is-fullwidth">انشاء الحساب</button>
+                    <a href="" class="linkcentered">تسجيل الدخول</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    <footer class="footer">
+    </footer>
+
+    <div class="licens">
+    </div>
+
+</body>
+</html>
+<script src='../assets/javascript/javascript.js'></script>
+<script src='../assets/javascript/navFooterLicenes.js'></script>
