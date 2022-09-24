@@ -18,6 +18,27 @@ document.querySelectorAll("[idoI]").forEach((ele)=>{
 })
 
 
+document.querySelectorAll(".clocker").forEach((els, index)=>{
+    els.addEventListener('click', (e)=>{
+        els.nextSibling.nextSibling.classList.toggle("shower");
+        document.querySelectorAll(".toy")[index].classList.toggle("rotat");
+    })
+})
+
+
+function sortShow(){
+    if (document.getElementById('ul2').style.display == 'none'){
+        document.getElementById('ul2').style.display = 'block';
+        document.getElementById('angleD2').style.display = 'inline';
+        document.getElementById('angleL2').style.display = 'none';
+    }
+
+    else{
+        document.getElementById('ul2').style.display = 'none';
+        document.getElementById('angleL2').style.display = 'inline';
+        document.getElementById('angleD2').style.display = 'none';
+    }
+}
 
 // Nav Bar JS Code For Mobile
 function navshow(){

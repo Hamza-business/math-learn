@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="HTML">
+<head>
+    <title>عن المحاضرة | منصة المداد التعليميه</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#8e44ad">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png"/>
+
+    <!-- assets -->
+    <link rel='stylesheet' href='../assets/style/bulma-rtl.min.css'>
+    <link rel='stylesheet' href='../assets/style/main.css'>
+    <link rel='stylesheet' href='../assets/style/nav&footer.css'>
+    <link rel='stylesheet' href='../assets/style/popup.css'>
+    <link rel='stylesheet' href='../assets/style/lectureInfo.css'>
+    <link rel="stylesheet" href="../assets/style/all.min.css">
+    <link rel="stylesheet" href="../assets/style/preload.css">
+    <link rel="stylesheet" href="../assets/style/keyframes.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+
+</head>
+<body onload="preload()">
+
+<!--====================================== PreLoad Bar ========================================-->
+    <div class='Prload' id='Prload'>
+        <div class='one'></div>
+        <div class='two'></div>
+        <div class='three'></div>
+        <div class='four'></div>
+        <div class='five'></div>
+    </div>
+<!--====================================== PreLoad Bar ========================================-->
+
+<!--======================================== Nav Bar ==========================================-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="../index.html">
+                <img src="../assets/images/logo.png">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="navshow()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../index.html">الرئيسيه</a>
+                <a class="navbar-item" onclick="charge()"><i class="fas fa-wallet"></i>الرصيد<span id="salary">0</span>جنيه</a>
+                <a class="navbar-item">حساب ولي الامر</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="is-purpel is-bell navbar-item" onclick="notificate()"><i class="fas fa-bell"></i></a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless"><i class="fas fa-user-circle is-purpel"></i></a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="../dashboard/lectures/"><i class="fas fa-tasks is-purpel"></i> محاضراتي</a>
+                            <a class="navbar-item" href="../dashboard/lectures/"><i class="fas fa-heart has-text-danger"></i> المفضله</a>
+                            <a class="navbar-item"><i class="fas fa-envelope has-text-primary"></i> الرسائل</a>
+                            <a class="navbar-item"><i class="fas fa-list has-text-warning"></i> سجل المشتريات</a>
+                            <a class="navbar-item" href="../dashboard/"><i class="fas fa-user-circle has-text-info"></i> الملف الشخصي</a>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a class="button is-purpel is-outlined" href="../login">تسجيل دخول</a>
+                        <a class="button is-primary is-outlined" href="../login/register">حساب جديد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--======================================== Nav Bar ==========================================-->
+
+<!--======================================= about Bar =========================================-->
+    <article class="lectureInfo ">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 image">
+                    <img src="../assets/images/Lecture2.jpg" alt="">
+                </div>
+                <div class="column is-6 text">
+                    <div>
+                        <h1 class="title is-4 has-text-weight-bold">اسم الدورة هنا</h1>
+                        <p class="is-size-5">السعر: 60 جنيه</p>
+                        <p class="is-size-6 has-text-weight-bold">الوصف:</p>
+                        <p class="is-size-6 has-text-weight-medium">وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة
+                            وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة وصف الدورة
+                            وصف الدورة وصف الدورة وصف الدورة</p>
+                        <p class="is-size-6 has-text-weight-semibold">تاريخ النزول: 2022/5/6</p>
+                        <p class="is-size-6 has-text-weight-semibold has-text-danger">تاريخ وقف البيع: 2022/7/6</p>
+                        <p class="is-size-6 has-text-weight-semibold">مدة الدورة: 8 ساعات</p>
+                        <div class="is-flex is-flex-wrap-wrap bottonsCont">
+                            <button class="button is-bg-purpel" onclick="buyPop()">شراء الان</button>
+                            <button class="button is-bg-purpel"><i class="fas fa-heart"></i> اضافة للمفضلة</button>
+                            <button class="button is-bg-purpel"><i class="fas fa-cart-plus"></i> اضافة للسلة</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+<!--======================================= about Bar =========================================-->
+
+<!--======================================= about Bar =========================================-->
+    <article class="Moqtarh">
+        <div class="container">
+            <h3 class="title is-4 has-text-centered">مقترحات</h3>
+            <div class="mqDiv" id="mqDiv">
+                <div class="card" id="Fcard">
+                    <div class="card-image">
+                        <figure class="image is-3by3">
+                            <img src="../assets/images/Lecture1.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h3 class="title is-5">المراجعة النهائيه</h3>
+                            <p class="subtitle is-6" id="date"><i class="fas fa-clock"></i> 5 / 10 / 2021</p>
+                            <p class="subtitle is-4" id="price">60 جنيه</p>
+                        </div>
+                        <div class="content">
+                            <button class="button is-bg-purpel is-fullwidth">شراء الان</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="Fcard">
+                    <div class="card-image">
+                        <figure class="image is-3by3">
+                            <img src="../assets/images/Lecture1.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h3 class="title is-5">دورة</h3>
+                            <p class="subtitle is-6" id="date"><i class="fas fa-clock"></i> 5 / 10 / 2021</p>
+                            <p class="subtitle is-4" id="price">60 جنيه</p>
+                        </div>
+                        <div class="content">
+                            <button class="button is-bg-purpel is-fullwidth">شراء الان</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="Fcard">
+                    <div class="card-image">
+                        <figure class="image is-3by3">
+                            <img src="../assets/images/Lecture1.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h3 class="title is-5"> النهائيه</h3>
+                            <p class="subtitle is-6" id="date"><i class="fas fa-clock"></i> 5 / 10 / 2021</p>
+                            <p class="subtitle is-4" id="price">60 جنيه</p>
+                        </div>
+                        <div class="content">
+                            <button class="button is-bg-purpel is-fullwidth">شراء الان</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="Fcard">
+                    <div class="card-image">
+                        <figure class="image is-3by3">
+                            <img src="../assets/images/Lecture1.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h3 class="title is-5">1المراجعة النهائيه</h3>
+                            <p class="subtitle is-6" id="date"><i class="fas fa-clock"></i> 5 / 10 / 2021</p>
+                            <p class="subtitle is-4" id="price">60 جنيه</p>
+                        </div>
+                        <div class="content">
+                            <button class="button is-bg-purpel is-fullwidth">شراء الان</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <button class="slid_Dots"><i class="fas fa-angle-right"></i></button>
+            <button class="slid_Dots"><i class="fas fa-angle-left"></i></button>
+        </div>
+    </article>
+<!--======================================= about Bar =========================================-->
+
+<!--======================================= footer Bar =========================================-->
+    <footer class="footer">
+        <div class="container has-text-right">
+            <div class="columns">
+                <div class="column is-3">
+                    <img src="../assets/images/logo1.png">
+                    <p class="has-text-right">
+                        منصة المداد التعليمية هي المنصة الخاصة بمستر عبدالله
+                         الشهاوي والتي تقدم لك الشرح المنظّم
+                          والدقيق مع سهولة الوصول لما تحتاجه .
+                    </p>
+                    <div class="location">
+                        <a href="https://maps.app.goo.gl/t2Nj8LMP4xjtj3fq5" class="locationLink" title="سنتر Mars المحلة الكبري ‏ 040 2253747 ‏">
+                            <i class="fas fa-map-marker-alt"></i><label>المحلة الكبرى</label></a>
+                    </div>
+                    <div class="is-flex">
+                        <a href="https://www.facebook.com/medadarabic/" class="social1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UCM3DOof443ZI1AYcFJA4dfw" class="social1"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <h4 class="subtitle is-5">روابط هامة</h4>
+                    <div>
+                        <li><a href="../support/">الدعم الفني</a></li>
+                        <li><a href="../PrivacyPolicy/">سياسة الخصوصية</a></li>
+                        <li><a href="../TermsAndCondition/">الشروط والاحكام</a></li>
+                        <li><a href="../about/">من نحن</a></li>
+                        <li><a href="../contact/">إتصل بنا</a></li>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <h4 class="subtitle is-5">الملف الشخصى</h4>
+                    <div>
+                        <li><a href="../login/">تسجيل الدخول</a></li>
+                        <li><a href="../login/register">إنشاء حساب</a></li>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <h4 class="subtitle is-5">إتصل بنا</h4>
+                    <div>
+                        <li><a href="tel:3093004275"><i class="fas fa-phone-alt"></i>3093004275</a></li>
+                        <li><a href="mailto:contact@medadedu.com"><i class="fas fa-envelope"></i>contact@medadedu.com</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="licens">
+        <div class="container is-fluid">
+            <div class="has-text-centered">
+                <p class="subtitle is-6">
+                    تم تصميم المداد التعليمية بواسطة <a href="https://www.facebook.com/hamza.elkotp.1/">حمزة القطب</a>
+                    والتطوير بواسطة <a href="https://www.linkedin.com/in/mmostafa261">محمد مصطفى</a> <br>
+                    جميع الحقوق محفوظة &copy;
+                </p>
+            </div>
+        </div>
+    </div>
+<!--======================================= footer Bar =========================================-->
+
+
+<!--====================================== charge Pop Up =======================================-->
+    <article class="message charge" id="charge">
+        <div class="message-body">
+            <a href="../charge/"><div class="card">
+                <div class="card-content has-text-centered">
+                    <h3 class="title is-4 is-purpel">شحن المحفظة</h3>
+                </div>
+            </div></a>
+        </div>
+    </article>
+<!--====================================== charge Pop Up =======================================-->
+
+<!--==================================== notificate Pop Up =====================================-->
+    <article class="message notificate" id="notificate">
+        <div class="message-body">
+            <div class="card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <a href="#"><div class="media-content">
+                            <p class="is-size-6 title1">المراجعة النهائيه السادسه تم نشرها بواسطة</p>
+                            <div class="labels is-flex">
+                                <p class="is-size-7 has-text-weight-bold DrName" id="DrName">عبدالله الشهاوي</p>
+                                <span class="tag is-bg-purpel is-rounded price" id="price">60 جنيه</span>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+                
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <a href="#"><div class="media-content">
+                            <p class="is-size-6 title1">المراجعة النهائيه السادسه تم نشرها بواسطة</p>
+                            <div class="labels is-flex">
+                                <p class="is-size-7 has-text-weight-bold DrName" id="DrName">عبدالله الشهاوي</p>
+                                <span class="tag is-bg-purpel is-rounded price" id="price">60 جنيه</span>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <a href="#"><div class="media-content">
+                            <p class="is-size-6 title1">المراجعة النهائيه السادسه تم نشرها بواسطة</p>
+                            <div class="labels is-flex">
+                                <p class="is-size-7 has-text-weight-bold DrName" id="DrName">عبدالله الشهاوي</p>
+                                <span class="tag is-bg-purpel is-rounded price" id="price">60 جنيه</span>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+<!--==================================== notificate Pop Up =====================================-->
+
+<!--========================================= Buy Pop Up ========================================-->
+    <div class="shadows" id="shadows"></div>
+    <article class="buy-pop has-text-centered" id="buypop">
+        <i class="fas fa-exclamation is-size-2 has-text-warning"></i>
+        <h4 class="title is-3 is-purpel has-text-weight-semibold">تأكيد الشراء!</h4>
+        <p class="is-size-5">هل انت واثق في رغبتك بشراء هذه الدورة؟</p>
+        <div class="is-flex is-flex-wrap-wrap">
+            <button class="button is-danger" onclick="shadows.style.display='none',buypop.style.display='none'">الغاء</button>
+            <button class="button is-bg-purpel">شراء</button>
+        </div>
+    </article>
+<!--========================================== Buy Pop Up =======================================-->
+
+</body>
+</html>
+<script src='../assets/javascript/javascript.js'></script>
+<script src='../assets/javascript/preload.js'></script>

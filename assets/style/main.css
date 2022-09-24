@@ -325,6 +325,82 @@ footer img {
     }
 }
 
+
+
+.hero-Lect{
+    background: linear-gradient(rgba(122, 122, 122 , 0) 100%, rgba(122, 122, 122, 0.2)100%), url('/assets/images/bg3j.png');
+    background-size: cover;
+    margin-bottom: 2rem !important;
+    margin-top: 4rem !important;
+    border-bottom: 2px solid var(--main-color);
+}
+.LastLecGrid{
+    margin-top: 10px !important;
+}
+.LastLecGrid .card-content {
+    background-color: transparent;
+    padding: 1rem 10px;
+}
+.hero-Lect .input::placeholder {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.fa-search.is-red{
+    opacity: 0.6;
+}
+.card-icon {
+    font-size: 17px !important;
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
+}
+.no-marg {
+    margin-bottom: 10px !important;
+}
+.filter{
+    padding: 10px 0 10px 10px !important;
+    max-height: 520px;
+}
+.menu-list ul{
+    display: none;
+}
+.menu-list ul.shower{
+    display: block;
+}
+.toy{
+    rotate: 0deg;
+    transition: 0.5s;
+}
+.toy.rotat{
+    rotate: 90deg;
+    padding: 0;
+}
+.doy{
+    rotate: 0deg;
+    transition: 0.5s;
+}
+.doy.rotat{
+    rotate: 90deg;
+    padding: 0;
+}
+.panel-heading.is-bg-red {
+    padding-bottom: 7px;
+    padding-top: 5px;
+    font-size: 17px;
+}
+.date{
+    margin-bottom: 8px !important;
+}
+.no-marg {
+    margin-bottom: 10px;
+}
+.menu {
+    min-height: 250px !important;
+}
+.menu-list li:last-child{
+    padding-bottom: 0.4rem !important;
+}
+
+
 @media (max-width: 680px){
     .card{
         margin-right: 15px;
@@ -335,6 +411,9 @@ footer img {
     }
     .container.block.c2 {
         margin-top: -280px;
+    }
+    .paddedo {
+        padding: 0 35px;
     }
 }
 

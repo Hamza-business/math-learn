@@ -1,0 +1,70 @@
+.hero-Lect{
+    background: linear-gradient(rgba(122, 122, 122 , 0) 100%, rgba(122, 122, 122, 0.2)100%), url('../images/LecturesBG.jpg');
+    background-size: cover;
+    margin-bottom: 4rem !important;
+}
+
+.column .row_R{
+    display: grid;
+    grid-template-columns: var(--second-grid);
+}
+
+.column .row_R .card{
+    margin: 5px;
+}
+
+.card .card-content {
+    padding: 20px;
+}
+
+.card .title.is-5 {
+    margin-bottom: zrem;
+}
+
+.card p{
+    margin-bottom: 0.4rem;
+}
+
+.card .card-content .content {
+    margin-bottom: 1rem;
+}
+
+.card .card-content .content:last-child {
+    margin-bottom: 0rem;
+}
+
+.menu {
+    min-height: 250px !important;
+}
+
+.ul1, .Cards1 .ul2, .Cards1 .ul3, .Cards1 .ul4{
+    display: block;
+}
+
+#angleL1, #angleL2, #angleL3, #angleL4{
+    display: none;
+}
+
+.menu-list li:last-child{
+    padding-bottom: 0.4rem !important;
+}
+
+.panel {
+    margin-left: 10px;
+}
+
+.Page-Swicher{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.button.is-purpel:hover, 
+.button.is-purpel:focus, 
+.button.is-purpel:active {
+    background-color: var(--main-color);
+    color: #fff !important;
+}
+
+.hero-Lect span {
+    color: #293949;
+}
