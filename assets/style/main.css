@@ -266,7 +266,10 @@ footer img {
 .about .content1 a{
     min-width: 300px;
 }
-
+.hero-body {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
 
 .linkcentered{
     display: block;
