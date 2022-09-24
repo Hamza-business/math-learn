@@ -9,6 +9,16 @@ function formShow(){
 }
 
 
+document.querySelectorAll("[idoI]").forEach((ele)=>{
+    ele.addEventListener('change', (e)=>{
+        ind = ele.getAttribute("idoI")
+        document.querySelector(`[ido = "${ind}"]`).classList.remove("hide")
+        
+    })
+})
+
+
+
 // Nav Bar JS Code For Mobile
 function navshow(){
     if (document.getElementById('navbarBasicExample').style.display == 'block'){

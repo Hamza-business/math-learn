@@ -56,7 +56,11 @@ i{
 /* Start Styling Project */
 /*=================================== Nav Bar Style Start ===================================*/
 nav{
-    background-color: var(--nav-color) !important;
+    background-color: #fff !important;
+    border-bottom: 2px solid var(--main-color);
+    position: fixed !important;
+    top: 0;
+    width: 100%;
 }
 .navbar-link.is-arrowless {
     font-size: 36px;
@@ -160,6 +164,7 @@ footer img {
     background-position: center center;
     padding: 5rem 0px 8rem;
     box-shadow: rgba(255, 0, 0, 0.027) 0px 0px 0px 1000px inset;
+    margin-top: 70px;
 }
 .Home_hero video{
     border-radius: 20px;
@@ -208,7 +213,7 @@ footer img {
 }
 .features .gridSys{
     display: grid;
-    grid-template-columns: var(--main-grid);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
     grid-gap: 40px;
     margin-top: 40px;
 }
@@ -273,6 +278,33 @@ footer img {
     display: none;
 }
 
+
+.home_content {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.button.is-bg-red.enter {
+    padding: 19px 10px !important;
+    font-size: 14px;
+    position: absolute;
+    left: -10px;
+}
+.under {
+    margin-bottom: 25px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+.hide{
+    display: none;
+}
+
+
+.formbox{
+    box-shadow: rgba(255, 4, 4, 0.4) 0px 8px 80px;
+}
+
+
 @media (max-width: 1023px){
     .buttons:last-child {
         margin-bottom: -.5rem;
@@ -298,7 +330,12 @@ footer img {
         margin-right: 15px;
         margin-left: 15px;
     }
-    
+    .Home_hero{
+        padding-bottom: 210px;
+    }
+    .container.block.c2 {
+        margin-top: -280px;
+    }
 }
 
 @media (max-width: 440px){
