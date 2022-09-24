@@ -404,6 +404,26 @@ footer img {
 }
 
 
+
+.lectureInfo {
+    margin-top: 130px;
+}
+.Moqtarh {
+    margin-top: 80px;
+}
+.lectureInfo .button{
+    margin-top: 10px;
+}
+.lectureInfo .column.is-6.image {
+    padding-left: 25px;
+}
+.lectImage{
+    border: 2px solid var(--main-color);
+}
+.button.is-bg-red.cdt {
+    padding: 20px 25px !important;
+}
+
 @media (max-width: 680px){
     .card{
         margin-right: 15px;

@@ -23,63 +23,67 @@
 
     
     <section class="hero is-fullheight">
-      <div class="hero-body cct">
-        <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-5">
-            <form action="" class="box formbox" id="register">
-              <div class="field">
-                <label for="name" class="label">اسم الطالب</label>
-                <div class="control has-icons-left">
-                  <input type="name" class="input" name="student_name" required>
-                  <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
-                </div>
+        <div class="hero-body cct">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-5">
+                <form action="" class="box formbox" id="login">
+                  <div class="field">
+                    <label for="" class="label">البريد الالكتروني</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. Ahmed@gmail.com" class="input" required>
+                      <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="label">كلمة المرور</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" required>
+                      <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="checkbox"></label><input type="checkbox">تذكرني</label>
+                  </div>
+                  <div class="field">
+                    <button class="button is-bg-red is-fullwidth">تسجيل الدخول</button>
+                    <a href="#reg" class="linkcentered" onclick="formShow()">انشاء حساب</a>
+                  </div>
+                </form>
+                <!--#########################Regester form#########################-->
+                <form action="" class="box reg formbox" id="register">
+                    <div class="field">
+                        <label for="name" class="label">الاسم</label>
+                        <div class="control has-icons-left">
+                          <input type="name" placeholder="e.g. Ahmed" class="input" name="name" required>
+                          <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+                        </div>
+                    </div>
+                  <div class="field">
+                    <label for="email" class="label">البريد الالكتروني</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. Ahmed@gmail.com" class="input" required name="email">
+                      <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="password" class="label">كلمة المرور</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" name="password" required>
+                      <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <button class="button is-bg-red is-fullwidth">انشاء الحساب</button>
+                    <a href="" class="linkcentered">تسجيل الدخول</a>
+                  </div>
+                </form>
               </div>
-              <div class="field">
-                <label for="email" class="label">البريد الالكتروني</label>
-                <div class="control has-icons-left">
-                  <input type="email" placeholder="e.g. Ahmed@gmail.com" class="input" required name="student_email">
-                  <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <label for="password" class="label">كلمة المرور</label>
-                <div class="control has-icons-left">
-                  <input type="password" placeholder="*******" class="input" name="password" required>
-                  <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <label for="student_phone" class="label">رقم الهاتف</label>
-                <div class="control has-icons-left">
-                  <input type="phone" placeholder="e.g. Ahmed@gmail.com" class="input" required name="student_phone">
-                  <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <label for="parent1_phone" class="label">رقم الأب</label>
-                <div class="control has-icons-left">
-                  <input type="phone" placeholder="e.g. Ahmed@gmail.com" class="input" required name="parent1_phone">
-                  <span class="icon is-small is-left"><i class="fas fa-phone"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <label for="parent2_phone" class="label">رقم الأم</label>
-                <div class="control has-icons-left">
-                  <input type="phone" placeholder="e.g. Ahmed@gmail.com" class="input" required name="parent2_phone">
-                  <span class="icon is-small is-left"><i class="fas fa-phone"></i></span>
-                </div>
-              </div>
-              <div class="field">
-                <button class="button is-bg-red is-fullwidth">انشاء الحساب</button>
-                <a href="" class="linkcentered">تسجيل الدخول</a>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>	
-      </div>
-    </section>
+      </section>
+
     
     <footer class="footer">
     </footer>
