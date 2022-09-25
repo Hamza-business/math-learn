@@ -459,13 +459,14 @@ footer img {
     text-align: end;
     overflow-y: scroll;
 }
-.quizs .label.is-bg-red {
+.cvf .label.is-bg-red {
     font-size: 15px !important;
     padding: 8px 10px !important;
     width: fit-content;
     float: left;
+    margin-left: 0;
 }
-.quizs .label.is-bg-red:hover {
+.cvf .label.is-bg-red:hover {
     background-color: var(--main-color) !important;
 }
 .quizs .ques .quistion{
