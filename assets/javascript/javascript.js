@@ -90,6 +90,28 @@ answerActive()
 
 
 
+function persentCheck(){
+    let perVal = document.getElementById("persent").textContent;
+    let perNu = document.getElementById("persent")
+    document.getElementById("pNum").classList.add(`p${perVal.replace("%","")}`)
+    let athc = document.getElementById("atchiv") 
+    let r = document.querySelector(':root');
+    if(+perVal.replace("%","") <= 100 && +perVal.replace("%","") >=70){
+        perNu.classList.add("isgT");
+    }
+    else if(+perVal.replace("%","") < 70 && +perVal.replace("%","") >=30){
+        perNu.classList.add("iswT");
+        r.style.setProperty('--coloredit', '#ecbd00');
+    }
+    else{
+        perNu.classList.add("isrT");
+        r.style.setProperty('--coloredit', '#ff3333');
+    }
+}
+
+
+
+
 function sortShow(){
     if (document.getElementById('ul2').style.display == 'none'){
         document.getElementById('ul2').style.display = 'block';

@@ -41,7 +41,15 @@
     outline: none !important;
     border-color: transparent !important;
 }
-
+.button.is-bg-red.is-outlined {
+    background-color: transparent !important;
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+.button.is-bg-red.is-outlined:hover {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
 .is-bg-red:hover, .is-bg-red:focus, .is-bg-red:active{
     border-color: transparent !important;
     background-color: #f83333d7 !important;
