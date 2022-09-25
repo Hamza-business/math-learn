@@ -26,6 +26,23 @@ document.querySelectorAll(".clocker").forEach((els, index)=>{
 })
 
 
+
+function preload(){
+    setTimeout(() => {
+        document.getElementById('pops-conatainer').style.display = 'block';
+        document.querySelector('.trans').classList.add("showNot");
+    }, 500);
+}
+document.onclick = function(){
+    document.querySelector('.trans').classList.remove("showNot");
+}
+setTimeout(() => {
+    document.getElementById('pops-conatainer').style.display = 'none';
+    document.querySelector('.trans').classList.remove("showNot");
+}, 20000);
+
+
+
 function sortShow(){
     if (document.getElementById('ul2').style.display == 'none'){
         document.getElementById('ul2').style.display = 'block';

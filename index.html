@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
 
 </head>
-<body>
+<body onload="preload()">
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
     </nav>
@@ -139,6 +139,25 @@
             </div>
         </div>
     </section>
+
+    <div class="notiBox">
+        <div class="trans"></div>
+        <div class="pops-conatainer" id="pops-conatainer">
+            
+            <div class="notification notifications noti1 is-bg-red">
+                <button class="delete" onclick="this.parentElement.style.display='none'"></button>
+                <p><span id="NoN">3/1</span> عفوا: لا شكرا ههههاعععععع</p>
+            </div>
+            <div class="notification notifications noti2 is-warning">
+                <button class="delete" onclick="this.parentElement.style.display='none'"></button>
+                <p><span id="NoN">3/2</span> تنبيه: الصيف خلص يعم</p>
+            </div>
+            <div class="notification notifications noti3 is-success">
+                <button class="delete" onclick="this.parentElement.style.display='none'"></button>
+                <p><span id="NoN">3/3</span> تم تسجيل الدخول بنجاح مرحبا بك فالمنصة ياباشا</p>
+            </div>
+        </div>
+    </div>
 
     
     <footer class="footer">
