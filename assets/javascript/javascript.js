@@ -34,12 +34,59 @@ function preload(){
     }, 500);
 }
 document.onclick = function(){
-    document.querySelector('.trans').classList.remove("showNot");
+    try{
+        document.querySelector('.trans').classList.remove("showNot");
+    }catch{
+        return ""
+    }
+    
 }
 setTimeout(() => {
-    document.getElementById('pops-conatainer').style.display = 'none';
-    document.querySelector('.trans').classList.remove("showNot");
+    try{
+        document.getElementById('pops-conatainer').style.display = 'none';
+        document.querySelector('.trans').classList.remove("showNot");
+    }catch{
+        return ""
+    }
+    
 }, 20000);
+
+
+
+function questionChecker(){
+    try{
+        let ques =  document.querySelectorAll(".quistion");
+        ques.forEach((ele)=>{
+            ele.addEventListener("click",(e)=>{
+                ques.forEach((es)=>{
+                    es.classList.remove("")
+                })
+                ele.classList.add("activeQ")
+            })
+        })
+    }catch(res){
+        return res
+    }
+}
+questionChecker()
+
+
+function answerActive(){
+    try{
+        let asnes =  document.querySelectorAll(".ans");
+        asnes.forEach((ele)=>{
+            ele.addEventListener("click",(e)=>{
+                asnes.forEach((es)=>{
+                    es.classList.remove("active")
+                })
+                ele.classList.add("active")
+            })
+        })
+    }catch(res){
+        return res
+    }
+}
+answerActive()
 
 
 
