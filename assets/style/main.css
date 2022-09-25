@@ -651,16 +651,40 @@ footer img {
     background-color: var(--main-color) !important;
 }
 .noti1, .noti2, .noti3{
-    animation: NotiPop 17s !important;
+    animation: NotiPop 8s !important;
     animation-fill-mode: forwards !important;
     animation-iteration-count: 1 !important;
 }
-  
+.notification.notifications.noti1 {
+    background-color: #fff !important;
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+.notification.notifications.noti2 {
+    background-color: #fff !important;
+    border: 2px solid rgb(248, 170, 0) !important;
+    color: rgb(248, 170, 0) !important;
+}
+.notification.notifications.noti3 {
+    background-color: #fff !important;
+    border: 2px solid var(--green-color) !important;
+    color: var(--green-color) !important;
+}
+
+
+.codee {
+    width: fit-content;
+    margin-top: 10px;
+    height: 42px;
+    margin-left: 10px;
+  }
+
+
 @keyframes NotiPop {
     0%{
       margin-right: -500px;
     }
-    5%{
+    15%{
       margin-right: 10px;
     }
     90%{
