@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="HTML">
+
+<head>
+    <title>ذاكرلي رياضيات</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <!-- assets -->
+    <link rel='stylesheet' href='/assets/style/bulma-rtl.min.css'>
+    <link rel='stylesheet' href='/assets/style/main.css'>
+    <link rel="stylesheet" href="/assets/style/all.min.css">
+    <link rel="stylesheet" href="/assets/style/persentCircle.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    </nav>
+
+    <section class="hero is-fullheight Payways">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <form action="" class="box isPay">
+                            <h1 class="is-red is-size-2 has-text-centered has-text-weight-semibold">الدفع</h1>
+                            <h2 class="is-size-3 has-text-weight-semibold isT">الاشتراك في</h2>
+                            <p class="is-red has-text-weight-bold is-size-6">الشهر الأول من شرح المنهج للصف الثالث الثانوي - 150 ج.م</p>
+
+                            <div class="inputField">
+                                <input value="" required="" class="input is-red has-text-weight-bold" type="number">
+                                <span class="is-size-4">ج.م</span>
+                            </div>
+
+                            <h2 class=" is-size-4 has-text-weight-semibold">طريقة الدفع:</h2>
+                            <div id="selectedShow" class="columns selectedShow" onclick="payWayShow()">
+                                <div class="column is-11 is-size-5">
+                                    <p>الدفع بواسطة: <span id="payWay">لم يتم اختيار طريقة دفع</span></p>
+                                    <p class="subtitle is-6" id="taxs">الضريبة غير محدده</p>
+                                    <!-- Don't change Id -->
+                                </div>
+                                <div class="column is-1 is-size-5">
+                                    <i class="fas fa-chevron-down" id="iconro"></i>
+                                </div>
+                            </div>
+
+                            <section id="section" class="column is-flex is-flex-direction-column pySection">
+                                <div class="row is-size-5 paywayo">
+                                    <p>
+                                        <img src="/assets/images/f2.png" style="width: 20px;" alt="">
+                                        <span class="togeto">ماكينات فوري</span>
+                                        <span class="imgContW">
+                                            <img src="/assets/images/f1.jpg" class="img1W">
+                                        </span>
+                                    </p>
+                                    <p class="subtitle is-6 togeto"> يضاف 2.5% + 4.5 ج.م مصاريف ادارية </p>
+                                    
+                                    <label class="radio">
+                                        <input type="radio" id="">
+                                    </label>                                   
+                                </div>
+
+                                <div class="row is-size-5 paywayo">
+                                    <p>
+                                        <img src="/assets/images/bank.png" style="width: 20px;" alt="">
+                                        <span class="togeto">فودافاون كاش</span>
+                                        <span class="imgContW">
+                                            <img src="/assets/images/fod.png" class="img1W">
+                                        </span>
+                                    </p>
+                                    <p class="subtitle is-6 togeto">يضاف 1.5% + 2 ج.م مصاريف ادارية</p>
+                                    
+                                    <label class="radio">
+                                        <input type="radio" id="">
+                                    </label>
+                                </div>
+
+                                <div class="row is-size-5 paywayo">
+                                    <p>
+                                        <img src="/assets/images/bank.png" style="width: 20px;" alt="">
+                                        <span class="togeto">فيزا</span>
+                                        <span class="imgContW">
+                                            <img src="/assets/images/vis.png" class="img1W">
+                                        </span>
+                                    </p>
+                                    <p class="subtitle is-6 togeto"> يضاف 1.5% + 2 ج.م مصاريف ادارية </p>
+                                    
+                                    <label class="radio">
+                                        <input type="radio" id="">
+                                    </label>
+                                </div>
+
+                                <div class="row is-size-5 paywayo">
+                                    <p>
+                                        <img src="/assets/images/op.png" style="width: 20px;" alt="">
+                                        <span class="togeto">اوباي</span>
+                                        <span class="imgContW">
+                                            <img src="/assets/images/opay.png" class="img1W">
+                                        </span>
+                                    </p>
+                                    <p class="subtitle is-6 togeto"> يضاف 1.5% + 3 ج.م مصاريف ادارية </p>
+                                    
+                                    <label class="radio">
+                                        <input type="radio" id="">
+                                    </label>
+                                </div>
+                            </section>
+
+                            <div class="notes">
+                                المبلغ بعد اضافة المصاريف الادارية:
+                                <input type="number" class="inpu" name="amountDeducted">
+                            </div>
+
+                            <div class="field">
+                                <button class="button is-bg-red">استكمال الدفع</button>
+                            </div>
+
+
+                            <p class="foct">اذا شحنت من قبل و تريد تأكيد المعاملة، اضغط <a href="">هنا</a> </p>
+                            <p class="has-text-weight-bold fost">المصاريف الإدارية خاصة بشركات التحويل وليس للمنصة دخل فيها.</p>
+                            <p class="is-red has-text-weight-bold fost">لا يمكن استرداد أية مبالغ مالية تم قبولها على المنصة تحت أي مسمى كان</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+    </footer>
+
+    <div class="licens">
+    </div>
+
+</body>
+
+</html>
+<script src='/assets/javascript/javascript.js'></script>
+<script src='/assets/javascript/navFooterLicenes.js'></script>
