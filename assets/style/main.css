@@ -411,8 +411,14 @@ footer img {
 .menu-list li:last-child{
     padding-bottom: 0.4rem !important;
 }
-
-
+.LastLec .totowa{
+    font-size: 14px !important;
+    margin-bottom: 15px;
+}
+.LastLec .totowa:hover{
+    background-color: var(--main-color);
+    color: #fff !important;
+}
 
 .lectureInfo {
     margin-top: 130px;
