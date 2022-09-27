@@ -93,7 +93,7 @@ function questionChecker(){
         ques.forEach((ele)=>{
             ele.addEventListener("click",(e)=>{
                 ques.forEach((es)=>{
-                    es.classList.remove("")
+                    es.classList.remove("activeQ")
                 })
                 ele.classList.add("activeQ")
             })
@@ -159,6 +159,28 @@ function sortShow(){
         document.getElementById('angleD2').style.display = 'none';
     }
 }
+
+
+
+function timer(){
+    try{
+        let timer = document.getElementById("timer");
+        setInterval(() => {
+            if(timer.textContent == "0"){
+                window.location = "/";
+            }else{
+                timer.textContent = +timer.textContent - 1
+            }
+            
+        }, 1000);
+    }catch{} 
+}
+timer()
+
+
+
+
+
 
 // Nav Bar JS Code For Mobile
 function navshow(){

@@ -835,6 +835,54 @@ footer img {
 
 
 
+.error{
+    background-image: url("/assets/images/bg3j.png");
+    margin-top: 70px;
+    box-shadow: rgba(189, 0, 0, 0.103) 0px 0px 0px 1000px inset;
+    background-size: cover;
+    background-repeat: revert-layer;
+}
+.tit{
+    color: var(--main-color);
+    font-size: 400px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.3;
+    user-select: none;
+}
+.textsA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.ti1{
+    font-size: 45px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.textsA .title{
+    line-height: 50px;
+}
+.button{
+    border-width: 2px;
+}
+.button:hover{
+    background-color: #ff2b2b63 !important;
+    border-color: var(--main-color) !important;
+}
+.time{
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+
+
+
 @keyframes NotiPop {
     0%{
       margin-right: -500px;
