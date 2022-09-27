@@ -370,7 +370,7 @@ footer img {
 }
 .filter {
     padding: 10px 0 10px 0px !important;
-    max-height: 520px;
+    height: max-content;
 }
 .menu-list ul{
     display: none;
@@ -546,7 +546,20 @@ footer img {
     font-weight: 600;
     font-size: 25px;
 }
-
+.quizs .descr2 {
+    background-color: var(--second-color);
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 20px;
+    border-right: 4px solid var(--main-color);
+}
+.quizs .totora{
+    overflow-x: hidden;
+}
+.quizs .descr2 ul{
+    padding: 0 20px;
+    font-size: 17px;
+}
 
 
 .quizs .vid {
