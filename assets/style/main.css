@@ -163,9 +163,9 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 5rem 0px 8rem;
-    box-shadow: rgba(255, 0, 0, 0.027) 0px 0px 0px 1000px inset;
-    margin-top: 70px;
+    padding: 0rem 0px 8rem;
+    box-shadow: rgba(255, 255, 255, 0.19) 0px 0px 0px 1000px inset;
+    margin-top: 50px;
 }
 .Home_hero video{
     border-radius: 20px;

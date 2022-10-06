@@ -163,8 +163,8 @@ function sortShow(){
 
 
 function timer(){
+    let timer = document.getElementById("timer");
     try{
-        let timer = document.getElementById("timer");
         setInterval(() => {
             if(timer.textContent == "0"){
                 window.location = "/";
