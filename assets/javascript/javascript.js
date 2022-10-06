@@ -164,16 +164,15 @@ function sortShow(){
 
 function timer(){
     let timer = document.getElementById("timer");
-    try{
-        setInterval(() => {
+    setInterval(() => {
+        try{
             if(timer.textContent == "0"){
                 window.location = "/";
             }else{
                 timer.textContent = +timer.textContent - 1
             }
-            
-        }, 1000);
-    }catch{} 
+        }catch{} 
+    }, 1000);
 }
 timer()
 
